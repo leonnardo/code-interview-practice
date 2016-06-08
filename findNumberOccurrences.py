@@ -5,11 +5,11 @@ Ouput: How many times x occour in the array
 """
 
 def bsearch(arr, x, first):
-"""
+    """
     arr: integer array 
     x: integer 
     first: boolean to check if we look for first or last occurrence of x
-"""
+    """
 
     start = 0
     end = len(arr)-1
@@ -30,10 +30,13 @@ def bsearch(arr, x, first):
 
     return result
 
-myArr = [1,2,3,42,42,42,71,100]
+#myArr = [1,2,3,42,42,42,71,100]
+myArr = [1,2,3]
 first = bsearch(myArr, 42, True)
-last = bsearch(myArr, 42, False)
-
-print last - first + 1
+if first == -1:
+    print 0
+else:
+    last = bsearch(myArr, 42, False)
+    print last - first + 1
 
 
