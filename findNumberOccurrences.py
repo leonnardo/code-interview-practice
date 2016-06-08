@@ -13,7 +13,7 @@ def bsearch(arr, x, first):
 
     start = 0
     end = len(arr)-1
-    res = -1
+    result = -1
 
     while (start <= end):
         mid = (start+end)/2
